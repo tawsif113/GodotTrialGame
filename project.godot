@@ -1,0 +1,25 @@
+; Engine configuration file.
+; It's best to edit this file using the editor.
+; If you modify it, update the header to prevent the editor from overwriting your changes.
+config_version=5
+
+[application]
+config/name="Simple Walk Demo"
+run/main_scene="res://scenes/Main.tscn"
+config/features=PackedStringArray("4.2")
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
+[input]
+move_up={"deadzone":0.5,"events":[{"type":"InputEventKey","physical_scancode":87},{"type":"InputEventKey","physical_scancode":16777232}]}
+move_down={"deadzone":0.5,"events":[{"type":"InputEventKey","physical_scancode":83},{"type":"InputEventKey","physical_scancode":16777234}]}
+move_left={"deadzone":0.5,"events":[{"type":"InputEventKey","physical_scancode":65},{"type":"InputEventKey","physical_scancode":16777231}]}
+move_right={"deadzone":0.5,"events":[{"type":"InputEventKey","physical_scancode":68},{"type":"InputEventKey","physical_scancode":16777233}]}
+
+[physics]
+common/physics_ticks_per_second=60
+
+[rendering]
+renderer/rendering_method="forward_plus"

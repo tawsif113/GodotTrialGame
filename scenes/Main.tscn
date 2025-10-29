@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://6l0iv7b3w3d4"]
+
+[ext_resource type="PackedScene" uid="uid://bg6q7b1w7m4r" path="res://scenes/Player.tscn" id=1]
+
+[node name="Main" type="Node2D"]
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.117647, 0.117647, 0.117647, 1)
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 640, 360 )
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2( 0, -32 )
+offset = Vector2( 0, 0 )
+zoom = Vector2( 1, 1 )
+current = true
